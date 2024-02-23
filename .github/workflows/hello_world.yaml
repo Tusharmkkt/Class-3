@@ -3,13 +3,13 @@ on:
   push:
     branches:
       - main
-  workflow_dispach:
+  workflow_dispatch:
 jobs:
   build_and_test:
     runs-on: ubuntu-20.04
     steps:
       - name: Clone Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2s
       - name : Compile Java File
         shell: bash
         run: javac Main.java
