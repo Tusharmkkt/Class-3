@@ -7,7 +7,7 @@ on:
 jobs:
   build_and_test:
     runs-on: ubuntu-20.04
-    step:
+    steps:
       - name: Clone Code
       uses: actions/checkout@v2
       - name : Compile Java File
@@ -16,5 +16,5 @@ jobs:
       - name: Run Java File
       shell: bash
       run: java Main
-      
+
    
